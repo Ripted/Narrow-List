@@ -1,26 +1,28 @@
 // Configuration file for Narrow Arrow Rankings
 
-// Level IDs - ordered from HARDEST to EASIEST
+// Level IDs with optional thumbnails - ordered from HARDEST to EASIEST
 // Top 1 = Hardest level, Top 2 = Second hardest, etc.
+// Format: { id: 'level_id', thumb: 'thumbs/image.png' } or just 'level_id'
 const LEVEL_IDS = [
-    '1743661104278',
-    '1750689536836'
+    { id: '1743661104278', thumb: 'thumbs/towerofhell.png' },
+    { id: '1750689536836', thumb: 'thumbs/samstowerofhell.png' },
 ];
 
 // Player profile pictures
 // Add username: image_url pairs here
 const PLAYER_AVATARS = {
-    'Ripted': 'https://via.placeholder.com/120/6366f1/ffffff?text=R',
-    'sqm': 'https://via.placeholder.com/120/8b5cf6/ffffff?text=S',
-    'kiwi': 'https://via.placeholder.com/120/10b981/ffffff?text=K',
-    'ImBen': 'https://via.placeholder.com/120/f59e0b/ffffff?text=IB',
-    'DRally_Slave': 'https://via.placeholder.com/120/ef4444/ffffff?text=D',
-    'Aqprox': 'https://via.placeholder.com/120/3b82f6/ffffff?text=A',
-    'Ch4mpY': 'https://via.placeholder.com/120/ec4899/ffffff?text=C'
+    'Ripted': 'https://cdn.discordapp.com/avatars/1243665459929157738/5ec86ea7ce0037e6da5fb97b094be41b.png?size=4096',
+    'sqm': 'https://cdn.discordapp.com/avatars/1273388832326422739/03b589472663daef45c48fdbf417d489.png?size=4096',
+    'kiwi': 'https://cdn.discordapp.com/avatars/1377664026602897470/da66e50a4050199bdc72fa70741f253f.png?size=4096',
+    'ImBen': 'https://cdn.discordapp.com/avatars/1169981852799471660/3d1241305d832359d4724802cbe11a5e.png?size=4096',
+    'DRally_Slave': 'https://cdn.discordapp.com/avatars/1202327373362761821/a_67b95eb1d7d5728a13d504f5847214cb.gif?size=4096',
+    'Aqprox': 'https://cdn.discordapp.com/avatars/467941686979592192/6d2a77e10a297dfa632b3740055b34ea.png?size=4096',
+    'Ch4mpY': 'https://cdn.discordapp.com/avatars/985798894099247115/d029614082425185bab52e65896679f1.png?size=4096',
 };
 
-// API Configuration
-const API_BASE = 'https://api.narrowarrow.xyz';
+// API Configuration - Using CORS proxy to fix cross-origin issues
+const CORS_PROXY = 'https://corsproxy.io/?';
+const API_BASE = CORS_PROXY + encodeURIComponent('https://api.narrowarrow.xyz');
 
 // Points system based on level difficulty rank
 const POINTS_SYSTEM = {
