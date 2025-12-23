@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Details - Narrow Arrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🎯 Narrow Arrow Rankings</h1>
+            <div class="nav-links">
+                <a href="index.html">Levels</a>
+                <a href="leaderboard.html">Players</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div id="loading" class="loading">Loading level...</div>
+        
+        <div id="level-details" style="display: none;">
+            <div class="breadcrumb">
+                <a href="index.html">← Back to Levels</a>
+            </div>
+
+            <div class="level-header">
+                <div class="level-rank-badge" id="level-rank"></div>
+                <div class="level-info">
+                    <h2 id="level-name"></h2>
+                    <p class="level-meta">
+                        <span id="level-author"></span>
+                        <span class="separator">•</span>
+                        <span id="level-completions"></span>
+                        <span class="separator">•</span>
+                        <span id="level-points"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="leaderboard-section">
+                <h3>Leaderboard</h3>
+                <div id="leaderboard-table"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            loadLevelPage();
+        });
+    </script>
+</body>
+</html>

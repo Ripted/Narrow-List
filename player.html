@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Profile - Narrow Arrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🎯 Narrow Arrow Rankings</h1>
+            <div class="nav-links">
+                <a href="index.html">Levels</a>
+                <a href="leaderboard.html">Players</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div id="loading" class="loading">Loading player...</div>
+        
+        <div id="player-profile" style="display: none;">
+            <div class="breadcrumb">
+                <a href="leaderboard.html">← Back to Leaderboard</a>
+            </div>
+
+            <div class="player-header">
+                <img id="player-avatar" class="player-avatar-large" src="" alt="">
+                <div class="player-info">
+                    <h2 id="player-name"></h2>
+                    <div class="player-stats">
+                        <div class="stat">
+                            <span class="stat-value" id="total-points"></span>
+                            <span class="stat-label">Total Points</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="completions-count"></span>
+                            <span class="stat-label">Completions</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="hardest-level"></span>
+                            <span class="stat-label">Hardest Level</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="completions-section">
+                <h3>Completed Levels</h3>
+                <div id="completions-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            loadPlayerPage();
+        });
+    </script>
+</body>
+</html>

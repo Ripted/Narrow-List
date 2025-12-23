@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrow Arrow - Level Rankings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🎯 Narrow Arrow Rankings</h1>
+            <div class="nav-links">
+                <a href="index.html" class="active">Levels</a>
+                <a href="leaderboard.html">Players</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="header-section">
+            <h2>Hardest Levels</h2>
+            <p class="subtitle">Ranked from hardest to easiest • Complete them to earn points!</p>
+            <div id="loading" class="loading">Loading levels...</div>
+        </div>
+
+        <div id="levels-container" class="levels-grid"></div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            loadLevelsPage();
+        });
+    </script>
+</body>
+</html>
