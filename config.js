@@ -3,11 +3,8 @@
 // Level IDs - ordered from HARDEST to EASIEST
 // Top 1 = Hardest level, Top 2 = Second hardest, etc.
 const LEVEL_IDS = [
-    '1743661104278',  // Top 1 - Hardest
-    // Add more level IDs here in order of difficulty
-    // Example:
-    // '1234567890123',  // Top 2
-    // '9876543210987',  // Top 3
+    '1743661104278',
+    '1750689536836'
 ];
 
 // Player profile pictures
@@ -19,9 +16,7 @@ const PLAYER_AVATARS = {
     'ImBen': 'https://via.placeholder.com/120/f59e0b/ffffff?text=IB',
     'DRally_Slave': 'https://via.placeholder.com/120/ef4444/ffffff?text=D',
     'Aqprox': 'https://via.placeholder.com/120/3b82f6/ffffff?text=A',
-    'Ch4mpY': 'https://via.placeholder.com/120/ec4899/ffffff?text=C',
-    // Add more players here:
-    // 'PlayerName': 'https://example.com/image.png',
+    'Ch4mpY': 'https://via.placeholder.com/120/ec4899/ffffff?text=C'
 };
 
 // API Configuration
